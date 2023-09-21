@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ED6A3F12A8EF82400AC4ED6 /* app_moraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A3F02A8EF82400AC4ED6 /* app_moraApp.swift */; };
+		6ED6A3F32A8EF82400AC4ED6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A3F22A8EF82400AC4ED6 /* ContentView.swift */; };
+		6ED6A3F52A8EF82500AC4ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED6A3F42A8EF82500AC4ED6 /* Assets.xcassets */; };
+		6ED6A3F82A8EF82500AC4ED6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED6A3F72A8EF82500AC4ED6 /* Preview Assets.xcassets */; };
+		6ED6A4022A8EF82500AC4ED6 /* app_moraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A4012A8EF82500AC4ED6 /* app_moraTests.swift */; };
+		6ED6A40C2A8EF82500AC4ED6 /* app_moraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A40B2A8EF82500AC4ED6 /* app_moraUITests.swift */; };
+		6ED6A40E2A8EF82500AC4ED6 /* app_moraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A40D2A8EF82500AC4ED6 /* app_moraUITestsLaunchTests.swift */; };
+		6ED6A41D2A8EF84900AC4ED6 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED6A41C2A8EF84900AC4ED6 /* login.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ED6A3FE2A8EF82500AC4ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED6A3E52A8EF82400AC4ED6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ED6A3EC2A8EF82400AC4ED6;
+			remoteInfo = app_mora;
+		};
+		6ED6A4082A8EF82500AC4ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED6A3E52A8EF82400AC4ED6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ED6A3EC2A8EF82400AC4ED6;
+			remoteInfo = app_mora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6ED6A3ED2A8EF82400AC4ED6 /* app_mora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_mora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED6A3F02A8EF82400AC4ED6 /* app_moraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_moraApp.swift; sourceTree = "<group>"; };
+		6ED6A3F22A8EF82400AC4ED6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6ED6A3F42A8EF82500AC4ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6ED6A3F72A8EF82500AC4ED6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6ED6A3FD2A8EF82500AC4ED6 /* app_moraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_moraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED6A4012A8EF82500AC4ED6 /* app_moraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_moraTests.swift; sourceTree = "<group>"; };
+		6ED6A4072A8EF82500AC4ED6 /* app_moraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_moraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED6A40B2A8EF82500AC4ED6 /* app_moraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_moraUITests.swift; sourceTree = "<group>"; };
+		6ED6A40D2A8EF82500AC4ED6 /* app_moraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_moraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6ED6A41C2A8EF84900AC4ED6 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ED6A3EA2A8EF82400AC4ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED6A3FA2A8EF82500AC4ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED6A4042A8EF82500AC4ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ED6A3E42A8EF82400AC4ED6 = {
+			isa = PBXGroup;
+			children = (
+				6ED6A3EF2A8EF82400AC4ED6 /* app_mora */,
+				6ED6A4002A8EF82500AC4ED6 /* app_moraTests */,
+				6ED6A40A2A8EF82500AC4ED6 /* app_moraUITests */,
+				6ED6A3EE2A8EF82400AC4ED6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ED6A3EE2A8EF82400AC4ED6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED6A3ED2A8EF82400AC4ED6 /* app_mora.app */,
+				6ED6A3FD2A8EF82500AC4ED6 /* app_moraTests.xctest */,
+				6ED6A4072A8EF82500AC4ED6 /* app_moraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ED6A3EF2A8EF82400AC4ED6 /* app_mora */ = {
+			isa = PBXGroup;
+			children = (
+				6ED6A3F02A8EF82400AC4ED6 /* app_moraApp.swift */,
+				6ED6A3F22A8EF82400AC4ED6 /* ContentView.swift */,
+				6ED6A41C2A8EF84900AC4ED6 /* login.swift */,
+				6ED6A3F42A8EF82500AC4ED6 /* Assets.xcassets */,
+				6ED6A3F62A8EF82500AC4ED6 /* Preview Content */,
+			);
+			path = app_mora;
+			sourceTree = "<group>";
+		};
+		6ED6A3F62A8EF82500AC4ED6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6ED6A3F72A8EF82500AC4ED6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ED6A4002A8EF82500AC4ED6 /* app_moraTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ED6A4012A8EF82500AC4ED6 /* app_moraTests.swift */,
+			);
+			path = app_moraTests;
+			sourceTree = "<group>";
+		};
+		6ED6A40A2A8EF82500AC4ED6 /* app_moraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6ED6A40B2A8EF82500AC4ED6 /* app_moraUITests.swift */,
+				6ED6A40D2A8EF82500AC4ED6 /* app_moraUITestsLaunchTests.swift */,
+			);
+			path = app_moraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ED6A3EC2A8EF82400AC4ED6 /* app_mora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED6A4112A8EF82500AC4ED6 /* Build configuration list for PBXNativeTarget "app_mora" */;
+			buildPhases = (
+				6ED6A3E92A8EF82400AC4ED6 /* Sources */,
+				6ED6A3EA2A8EF82400AC4ED6 /* Frameworks */,
+				6ED6A3EB2A8EF82400AC4ED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = app_mora;
+			productName = app_mora;
+			productReference = 6ED6A3ED2A8EF82400AC4ED6 /* app_mora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ED6A3FC2A8EF82500AC4ED6 /* app_moraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED6A4142A8EF82500AC4ED6 /* Build configuration list for PBXNativeTarget "app_moraTests" */;
+			buildPhases = (
+				6ED6A3F92A8EF82500AC4ED6 /* Sources */,
+				6ED6A3FA2A8EF82500AC4ED6 /* Frameworks */,
+				6ED6A3FB2A8EF82500AC4ED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ED6A3FF2A8EF82500AC4ED6 /* PBXTargetDependency */,
+			);
+			name = app_moraTests;
+			productName = app_moraTests;
+			productReference = 6ED6A3FD2A8EF82500AC4ED6 /* app_moraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6ED6A4062A8EF82500AC4ED6 /* app_moraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED6A4172A8EF82500AC4ED6 /* Build configuration list for PBXNativeTarget "app_moraUITests" */;
+			buildPhases = (
+				6ED6A4032A8EF82500AC4ED6 /* Sources */,
+				6ED6A4042A8EF82500AC4ED6 /* Frameworks */,
+				6ED6A4052A8EF82500AC4ED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ED6A4092A8EF82500AC4ED6 /* PBXTargetDependency */,
+			);
+			name = app_moraUITests;
+			productName = app_moraUITests;
+			productReference = 6ED6A4072A8EF82500AC4ED6 /* app_moraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ED6A3E52A8EF82400AC4ED6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6ED6A3EC2A8EF82400AC4ED6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					6ED6A3FC2A8EF82500AC4ED6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6ED6A3EC2A8EF82400AC4ED6;
+					};
+					6ED6A4062A8EF82500AC4ED6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6ED6A3EC2A8EF82400AC4ED6;
+					};
+				};
+			};
+			buildConfigurationList = 6ED6A3E82A8EF82400AC4ED6 /* Build configuration list for PBXProject "app_mora" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ED6A3E42A8EF82400AC4ED6;
+			productRefGroup = 6ED6A3EE2A8EF82400AC4ED6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ED6A3EC2A8EF82400AC4ED6 /* app_mora */,
+				6ED6A3FC2A8EF82500AC4ED6 /* app_moraTests */,
+				6ED6A4062A8EF82500AC4ED6 /* app_moraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ED6A3EB2A8EF82400AC4ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED6A3F82A8EF82500AC4ED6 /* Preview Assets.xcassets in Resources */,
+				6ED6A3F52A8EF82500AC4ED6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED6A3FB2A8EF82500AC4ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED6A4052A8EF82500AC4ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ED6A3E92A8EF82400AC4ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED6A3F32A8EF82400AC4ED6 /* ContentView.swift in Sources */,
+				6ED6A41D2A8EF84900AC4ED6 /* login.swift in Sources */,
+				6ED6A3F12A8EF82400AC4ED6 /* app_moraApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED6A3F92A8EF82500AC4ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED6A4022A8EF82500AC4ED6 /* app_moraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED6A4032A8EF82500AC4ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED6A40E2A8EF82500AC4ED6 /* app_moraUITestsLaunchTests.swift in Sources */,
+				6ED6A40C2A8EF82500AC4ED6 /* app_moraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ED6A3FF2A8EF82500AC4ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ED6A3EC2A8EF82400AC4ED6 /* app_mora */;
+			targetProxy = 6ED6A3FE2A8EF82500AC4ED6 /* PBXContainerItemProxy */;
+		};
+		6ED6A4092A8EF82500AC4ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ED6A3EC2A8EF82400AC4ED6 /* app_mora */;
+			targetProxy = 6ED6A4082A8EF82500AC4ED6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6ED6A40F2A8EF82500AC4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6ED6A4102A8EF82500AC4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ED6A4122A8EF82500AC4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"app_mora/Preview Content\"";
+				DEVELOPMENT_TEAM = 4H46TV93ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tec.app-mora";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ED6A4132A8EF82500AC4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"app_mora/Preview Content\"";
+				DEVELOPMENT_TEAM = 4H46TV93ZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tec.app-mora";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6ED6A4152A8EF82500AC4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H46TV93ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tec.app-moraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_mora.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/app_mora";
+			};
+			name = Debug;
+		};
+		6ED6A4162A8EF82500AC4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H46TV93ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tec.app-moraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_mora.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/app_mora";
+			};
+			name = Release;
+		};
+		6ED6A4182A8EF82500AC4ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H46TV93ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tec.app-moraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = app_mora;
+			};
+			name = Debug;
+		};
+		6ED6A4192A8EF82500AC4ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H46TV93ZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tec.app-moraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = app_mora;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ED6A3E82A8EF82400AC4ED6 /* Build configuration list for PBXProject "app_mora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED6A40F2A8EF82500AC4ED6 /* Debug */,
+				6ED6A4102A8EF82500AC4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED6A4112A8EF82500AC4ED6 /* Build configuration list for PBXNativeTarget "app_mora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED6A4122A8EF82500AC4ED6 /* Debug */,
+				6ED6A4132A8EF82500AC4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED6A4142A8EF82500AC4ED6 /* Build configuration list for PBXNativeTarget "app_moraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED6A4152A8EF82500AC4ED6 /* Debug */,
+				6ED6A4162A8EF82500AC4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED6A4172A8EF82500AC4ED6 /* Build configuration list for PBXNativeTarget "app_moraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED6A4182A8EF82500AC4ED6 /* Debug */,
+				6ED6A4192A8EF82500AC4ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ED6A3E52A8EF82400AC4ED6 /* Project object */;
+}
