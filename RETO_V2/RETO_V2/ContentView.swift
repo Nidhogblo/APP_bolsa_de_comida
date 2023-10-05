@@ -31,7 +31,7 @@ enum DonationState: String, CaseIterable {
 
 struct TrackingView: View {
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), // Sample LA coordinates
+        center: CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), // Coordenadas mock
         span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     )
 
@@ -43,7 +43,9 @@ struct TrackingView: View {
 
 struct DonationRow: View {
     @State private var showPopup = false
-    @State private var showTrackingView = false // State to manage showing the map
+    @State private var showTrackingView = false
+    @State private var showContentDetailView = false
+    @State private var showDonorProfileView = false
 
     var donation: Donation
 
@@ -70,13 +72,13 @@ struct DonationRow: View {
             .actionSheet(isPresented: $showPopup) {
                 ActionSheet(title: Text("Options"), buttons: [
                     .default(Text("Track"), action: {
-                        showTrackingView.toggle() // Trigger showing the map
+                        showTrackingView.toggle()
                     }),
                     .default(Text("Content"), action: {
-                        // Navigate to content view
+                        showContentDetailView.toggle()
                     }),
                     .default(Text("Donor Profile"), action: {
-                        // Navigate to donor profile view
+                        showDonorProfileView.toggle()
                     }),
                     .cancel()
                 ])
@@ -89,6 +91,16 @@ struct DonationRow: View {
         .sheet(isPresented: $showTrackingView) {
             NavigationView {
                 TrackingView()
+            }
+        }
+        .sheet(isPresented: $showContentDetailView) {
+            NavigationView {
+                ContentDetailView()
+            }
+        }
+        .sheet(isPresented: $showDonorProfileView) {
+            NavigationView {
+                DonorProfileView()
             }
         }
     }
@@ -126,7 +138,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("Donations Dashboard")
                 .navigationBarItems(leading: Image(systemName: "applelogo").foregroundColor(.red))
-                .font(Font.custom("Billabong", size: 24)) // Use your desired font
+                .font(Font.custom("Billabong", size: 24)) 
             }
             .tabItem {
                 Image(systemName: "gift")

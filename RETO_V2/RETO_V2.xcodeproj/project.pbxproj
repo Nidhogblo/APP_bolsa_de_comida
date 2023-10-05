@@ -16,6 +16,9 @@
 		42F679622A9EBAD1004DDC23 /* RETO_V2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F679612A9EBAD1004DDC23 /* RETO_V2UITestsLaunchTests.swift */; };
 		42F6796F2A9EC079004DDC23 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6796E2A9EC079004DDC23 /* ContentDetailView.swift */; };
 		42F679712A9EC260004DDC23 /* DonorProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F679702A9EC260004DDC23 /* DonorProfileView.swift */; };
+		42F679A92ABD054D004DDC23 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F679A82ABD054D004DDC23 /* LoginView.swift */; };
+		42F679AB2ABD057D004DDC23 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F679AA2ABD057D004DDC23 /* RegisterView.swift */; };
+		42F679AD2ABD05A7004DDC23 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F679AC2ABD05A7004DDC23 /* MainAppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		42F679612A9EBAD1004DDC23 /* RETO_V2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RETO_V2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42F6796E2A9EC079004DDC23 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		42F679702A9EC260004DDC23 /* DonorProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorProfileView.swift; sourceTree = "<group>"; };
+		42F679A82ABD054D004DDC23 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		42F679AA2ABD057D004DDC23 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		42F679AC2ABD05A7004DDC23 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 		42F679432A9EBAD1004DDC23 /* RETO_V2 */ = {
 			isa = PBXGroup;
 			children = (
+				42F679AC2ABD05A7004DDC23 /* MainAppView.swift */,
+				42F679AA2ABD057D004DDC23 /* RegisterView.swift */,
+				42F679A82ABD054D004DDC23 /* LoginView.swift */,
 				42F679442A9EBAD1004DDC23 /* RETO_V2App.swift */,
 				42F679462A9EBAD1004DDC23 /* ContentView.swift */,
 				42F679702A9EC260004DDC23 /* DonorProfileView.swift */,
@@ -265,7 +274,10 @@
 			files = (
 				42F679712A9EC260004DDC23 /* DonorProfileView.swift in Sources */,
 				42F679472A9EBAD1004DDC23 /* ContentView.swift in Sources */,
+				42F679AD2ABD05A7004DDC23 /* MainAppView.swift in Sources */,
 				42F6796F2A9EC079004DDC23 /* ContentDetailView.swift in Sources */,
+				42F679AB2ABD057D004DDC23 /* RegisterView.swift in Sources */,
+				42F679A92ABD054D004DDC23 /* LoginView.swift in Sources */,
 				42F679452A9EBAD1004DDC23 /* RETO_V2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
