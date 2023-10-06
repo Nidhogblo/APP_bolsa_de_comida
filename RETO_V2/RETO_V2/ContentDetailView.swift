@@ -26,11 +26,11 @@ struct ContentDetailView: View {
         List(foodItems) { item in
             HStack {
                 Text(item.name)
-                    .font(.custom("Chalkduster", size: 18))
+                    .font(.custom("Arial", size: 18))
                     .foregroundColor(Color.red.opacity(0.7))
                 Spacer()
                 Text("\(item.quantity)")
-                    .font(.custom("Chalkduster", size: 16))
+                    .font(.custom("Arial", size: 16))
             }
             .padding()
             .background(Color.white)
@@ -40,7 +40,7 @@ struct ContentDetailView: View {
         .listStyle(PlainListStyle())
         .padding([.horizontal])
         .background(NavigationConfigurator { nc in
-            nc.navigationBar.titleTextAttributes = [.font : UIFont(name: "Chalkduster", size: 24)!,
+            nc.navigationBar.titleTextAttributes = [.font : UIFont(name: "Arial", size: 24)!,
                                                     .foregroundColor : UIColor.red]
         })
         .navigationTitle("Donation Content")
