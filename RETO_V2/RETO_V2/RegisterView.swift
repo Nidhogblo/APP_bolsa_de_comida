@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+
 
 struct RegisterView: View {
     @Binding var isLogged: Bool
@@ -78,7 +80,14 @@ struct RegisterView: View {
 
                 Button("Registrar") {
                     // Lógica de registro
-                    isLogged = true
+                    Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+                        if let error = error {
+                            print("Error registering: \(error)")
+                            return
+                        }
+                        isLogged = true
+                    }
+
                 }
                 .padding()
                 .background(Color.orange)

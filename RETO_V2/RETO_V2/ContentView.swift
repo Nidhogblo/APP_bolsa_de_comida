@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import FirebaseDatabase
 
 struct Donation: Identifiable {
     var id: Int
@@ -14,6 +15,48 @@ struct Donation: Identifiable {
     var state: DonationState
     var content: [String]
     var donor: Donor
+    
+    init?(data: [String: Any]) {
+        guard let id = data["id"] as? Int,
+              let name = data["name"] as? String,
+              let stateRawValue = data["state"] as? String,
+              let state = DonationState(rawValue: stateRawValue),
+              let content = data["content"] as? [String],
+              let donorData = data["donor"] as? [String: Any],
+              let donorName = donorData["name"] as? String,
+              let donorEmail = donorData["email"] as? String,
+              let donorImage = donorData["image"] as? String else {
+            return nil
+        }
+        
+        self.id = id
+        self.name = name
+        self.state = state
+        self.content = content
+        self.donor = Donor(name: donorName, email: donorEmail, image: donorImage)
+    }
+    
+    init(id: Int, name: String, state: DonationState, content: [String], donor: Donor) {
+        self.id = id
+        self.name = name
+        self.state = state
+        self.content = content
+        self.donor = donor
+    }
+    
+    var dictionary: [String: Any] {
+        return [
+            "id": id,
+            "name": name,
+            "state": state.rawValue,
+            "content": content,
+            "donor": [
+                "name": donor.name,
+                "email": donor.email,
+                "image": donor.image
+            ]
+        ]
+    }
 }
 
 struct Donor {
@@ -116,6 +159,7 @@ struct DonationRow: View {
 }
 
 struct ContentView: View {
+    private var ref: DatabaseReference = Database.database().reference()
     var donations: [Donation] {
         let sampleDonor = Donor(name: "John Doe", email: "johndoe@example.com", image: "profile_image_placeholder")
         return [
@@ -128,6 +172,10 @@ struct ContentView: View {
         }
     }
     
+    init() {
+        pushDonationsToFirebase()
+    }
+
     var body: some View {
         NavigationView {
             VStack {
@@ -138,12 +186,19 @@ struct ContentView: View {
                 }
                 .navigationTitle("Donations Dashboard")
                 .navigationBarItems(leading: Image(systemName: "applelogo").foregroundColor(.red))
-                .font(Font.custom("Billabong", size: 24)) 
+                .font(Font.custom("Billabong", size: 24))
             }
             .tabItem {
                 Image(systemName: "gift")
                 Text("Donations")
             }
+        }
+    }
+
+    func pushDonationsToFirebase() {
+        for donation in donations {
+            let newRef = ref.child("donations").childByAutoId()
+            newRef.setValue(donation.dictionary)
         }
     }
 }
@@ -153,3 +208,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+
 
 struct LoginView: View {
     @Binding var isLogged: Bool
@@ -35,7 +37,13 @@ struct LoginView: View {
 
                 Button("Iniciar sesión") {
                     // Lógica de inicio de sesión
-                    isLogged = true
+                    Auth.auth().signIn(withEmail: username, password: password) { (authResult, error) in
+                        if let error = error {
+                            print("Error signing in: \(error)")
+                            return
+                        }
+                        isLogged = true
+                    }
                 }
                 .padding()
                 .background(Color.orange)
